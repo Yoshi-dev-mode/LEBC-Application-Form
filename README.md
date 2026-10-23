@@ -1,27 +1,25 @@
 # LEBC Music Ministry Registration
 
-A small, responsive website for the LEBC Music Ministry. It introduces the ministry and directs visitors to the relevant Google Forms for music training or ministry applications.
+A responsive registration website for the LEBC Music Ministry. Visitors can explore music training opportunities or access the ministry application form through the appropriate Google Forms link.
 
-The project uses plain HTML, CSS, and JavaScript. It is designed to be simple to host and easy to maintain.
+## Features
 
-## What it does
+- Clear entry points for music training and ministry applications
+- Responsive layout for desktop and mobile screens
+- Checkbox-controlled access to the ministry application link
+- Keyboard-visible focus states and reduced-motion support
+- Google Forms integration for collecting submissions
 
-- Presents the Music Ministry and its purpose.
-- Provides a registration link for people interested in singing, instruments, or tambourine training.
-- Provides a separate application link for people interested in joining the ministry.
-- Uses a baptism checkbox to control access to the ministry application link.
-- Includes responsive styling for smaller screens and smooth in-page navigation.
+> **Eligibility note:** The baptism checkbox is a front-end interaction only. It does not verify a visitor's eligibility; eligibility should be confirmed during the application review process.
 
-Registration data is collected by Google Forms; this website does not store submissions in its own database.
-
-## Built with
+## Tech stack
 
 - HTML5
 - CSS3
-- JavaScript
+- Vanilla JavaScript
 - Google Forms
-- Font Awesome icons
-- Google Fonts (Poppins)
+- Google Fonts — DM Sans and Playfair Display
+- Font Awesome
 
 ## Project structure
 
@@ -40,7 +38,7 @@ LEBC-Application-Form/
 
 ## Run locally
 
-No build step or package installation is required.
+This is a static website, so no package installation or build step is required.
 
 1. Clone the repository:
 
@@ -49,41 +47,22 @@ No build step or package installation is required.
    cd LEBC-Application-Form
    ```
 
-2. Open `index.html` in your browser.
+2. Open `index.html` in your browser, or use the Live Server extension in VS Code for a local preview.
 
-For a more realistic local preview, use the Live Server extension in VS Code and open the project through its local server.
+## Maintain the form links
 
-## Configure the registration forms
+The Google Forms destinations are configured in `index.html`. Before each registration period:
 
-The Google Forms URLs are set in `index.html`.
+1. Confirm both forms are open and accepting responses.
+2. Update the relevant link if a form has changed.
+3. Test both application paths on desktop and mobile.
 
-Before using the site for a new registration period, check that both form links are current:
-
-- **Music Training Application** — for visitors interested in learning singing, an instrument, or tambourine.
-- **Music Ministry Application** — for visitors who want to apply to join the ministry.
-
-If a form changes, update its `href` in `index.html` and test the link in a browser.
-
-## Important note about eligibility
-
-The baptism checkbox is a front-end interaction. It is not a secure verification mechanism, and it cannot prove a visitor's eligibility. If eligibility must be confirmed, that should happen as part of the actual application review process.
+The site does not store form submissions in its own database; responses are handled by Google Forms.
 
 ## Deployment
 
-This is a static website and can be hosted using GitHub Pages or another static web host.
-
-For GitHub Pages, open the repository's **Settings → Pages**, choose the deployment source and branch, and save. Once GitHub provides the published address, add it here:
-
-**Live site:** Not listed yet.
-
-## Maintenance checklist
-
-- Confirm both Google Forms are accepting responses.
-- Test the checkbox and application link after changing `js/script.js`.
-- Check the page on mobile and desktop.
-- Keep the logo at `assets/images/logo.png` or update its path in `index.html`.
-- Avoid committing private information or form-response data to the repository.
+The project can be hosted on GitHub Pages or another static web host. To publish with GitHub Pages, open the repository's **Settings → Pages**, select the deployment source and branch, and save the configuration.
 
 ## License
 
-No explicit open-source license is currently specified. Contact the repository owner before reusing the project beyond its intended purpose.
+No license is currently specified. Contact the repository owner before reusing or redistributing this project.
