@@ -1,62 +1,89 @@
-# 🎵 Music Ministry Registration Website
+# LEBC Music Ministry Registration
 
-A responsive and mobile-friendly website designed to support the registration process for the Music Ministry.
+A small, responsive website for the LEBC Music Ministry. It introduces the ministry and directs visitors to the relevant Google Forms for music training or ministry applications.
 
-The website provides information about the ministry and allows users to access registration forms for music training and ministry applications through Google Forms.
+The project uses plain HTML, CSS, and JavaScript. It is designed to be simple to host and easy to maintain.
 
-## Features
+## What it does
 
-* Responsive design for desktop and mobile devices
-* Modern and accessible user interface
-* Hero section introducing the Music Ministry
-* Music Training Registration form
-* Music Ministry Application form
-* Google Forms integration
-* Smooth scrolling navigation
-* Church-themed design using the ministry's branding colors
+- Presents the Music Ministry and its purpose.
+- Provides a registration link for people interested in singing, instruments, or tambourine training.
+- Provides a separate application link for people interested in joining the ministry.
+- Uses a baptism checkbox to control access to the ministry application link.
+- Includes responsive styling for smaller screens and smooth in-page navigation.
 
-## Purpose
+Registration data is collected by Google Forms; this website does not store submissions in its own database.
 
-This project was created to streamline the registration process for individuals interested in:
+## Built with
 
-* Learning singing, musical instruments, or tambourine
-* Joining and serving in the Music Ministry
-* Participating in future ministry training programs
+- HTML5
+- CSS3
+- JavaScript
+- Google Forms
+- Font Awesome icons
+- Google Fonts (Poppins)
 
-## Eligibility
-
-For Music Ministry applications, applicants must be baptized and willing to serve faithfully in the ministry.
-
-## Technologies Used
-
-* HTML5
-* CSS3
-* JavaScript
-
-## Live Website
-
-Add your GitHub Pages link here:
+## Project structure
 
 ```text
-https://yourusername.github.io/music-ministry-registration/
+LEBC-Application-Form/
+├── assets/
+│   └── images/
+│       └── logo.png
+├── css/
+│   └── index.css
+├── js/
+│   └── script.js
+├── index.html
+└── README.md
 ```
 
-## Google Forms
+## Run locally
 
-Replace the form links with your active Google Forms:
+No build step or package installation is required.
 
-* Music Training Registration
-* Music Ministry Application
+1. Clone the repository:
 
-## Future Improvements
+   ```bash
+   git clone https://github.com/Yoshi-dev-mode/LEBC-Application-Form.git
+   cd LEBC-Application-Form
+   ```
 
-* Ministry schedule announcements
-* Event calendar
-* QR code integration
-* Online audition registration
-* Ministry gallery
-* Contact page
+2. Open `index.html` in your browser.
+
+For a more realistic local preview, use the Live Server extension in VS Code and open the project through its local server.
+
+## Configure the registration forms
+
+The Google Forms URLs are set in `index.html`.
+
+Before using the site for a new registration period, check that both form links are current:
+
+- **Music Training Application** — for visitors interested in learning singing, an instrument, or tambourine.
+- **Music Ministry Application** — for visitors who want to apply to join the ministry.
+
+If a form changes, update its `href` in `index.html` and test the link in a browser.
+
+## Important note about eligibility
+
+The baptism checkbox is a front-end interaction. It is not a secure verification mechanism, and it cannot prove a visitor's eligibility. If eligibility must be confirmed, that should happen as part of the actual application review process.
+
+## Deployment
+
+This is a static website and can be hosted using GitHub Pages or another static web host.
+
+For GitHub Pages, open the repository's **Settings → Pages**, choose the deployment source and branch, and save. Once GitHub provides the published address, add it here:
+
+**Live site:** Not listed yet.
+
+## Maintenance checklist
+
+- Confirm both Google Forms are accepting responses.
+- Test the checkbox and application link after changing `js/script.js`.
+- Check the page on mobile and desktop.
+- Keep the logo at `assets/images/logo.png` or update its path in `index.html`.
+- Avoid committing private information or form-response data to the repository.
 
 ## License
 
-This project is intended for church and ministry use.
+No explicit open-source license is currently specified. Contact the repository owner before reusing the project beyond its intended purpose.
