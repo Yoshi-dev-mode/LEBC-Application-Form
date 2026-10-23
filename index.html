@@ -1,118 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#183c2d">
+    <meta name="description" content="Learn about the LEBC Music Ministry and apply for music training or ministry membership.">
+    <title>LEBC Music Ministry — Registration</title>
+    <link rel="icon" href="assets/images/logo.png">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <title>Music Ministry Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
-
-
-
 <body>
+    <header class="site-header">
+        <a class="brand" href="#" aria-label="LEBC Music Ministry home">
+            <img src="assets/images/logo.png" alt="LEBC logo">
+            <span>
+                <strong>LEBC</strong>
+                <small>Music Ministry</small>
+            </span>
+        </a>
+        <a class="header-link" href="#applications">Registration <span aria-hidden="true">↗</span></a>
+    </header>
 
-    <!-- HERO -->
-
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <div class="hero-logo">
-                <img src="assets/images/logo.png" alt="logo" width="100">
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span></span> WORSHIP · SERVICE · COMMUNITY</p>
+                <h1 id="hero-title">Make music.<br><em>Make room for worship.</em></h1>
+                <p class="hero-intro">Use the gifts you have, grow in the ones you're learning, and serve alongside the LEBC Music Ministry.</p>
+                <a class="button button-light" href="#applications">Explore applications <span aria-hidden="true">↓</span></a>
+                <p class="hero-note">Singing · Instruments · Tambourine</p>
             </div>
-
-            <h1>LEBC Music Ministry Registration</h1>
-
-            <p>
-                Do you have a heart for worship?
-                Join the Music Ministry and use your God-given talents
-                to glorify Him through singing, instruments, and worship.
-            </p>
-
-            <a href="#application" class="btn">
-                Apply Now
-            </a>
-
-            <div class="arrow">
-                ↓
+            <div class="hero-art" aria-hidden="true">
+                <div class="art-ring ring-one"></div>
+                <div class="art-ring ring-two"></div>
+                <div class="art-cross">†</div>
+                <div class="art-caption">SING TO THE LORD<br>A NEW SONG.</div>
+                <div class="art-reference">PSALM 96:1</div>
             </div>
+        </section>
 
-        </div>
-
-    </section>
-
-    <!-- ABOUT -->
-
-    <section class="about">
-
-        <h2>Why Join the Music Ministry?</h2>
-
-        <p>
-            The Music Ministry exists to lead the congregation into
-            meaningful worship and glorify God through music.
-            We welcome individuals who are willing to learn,
-            serve, and grow spiritually while using their talents.
-        </p>
-
-    </section>
-
-    <!-- APPLICATION -->
-
-    <section class="forms" id="application">
-
-        <div class="forms-container">
-
-            <h2>Application Forms</h2>
-
-            <div class="form-card">
-
-                <h3>Music Training Application</h3>
-
-                <p>
-                    Register if you want to learn Instrument or Singing or Tambourine.
-                </p>
-
-                <a href="https://forms.gle/r7MZmvsbSE7mPewPA" target="_blank" class="form-btn">
-                    <i class="fa-solid fa-pen-to-square"></i> Register Now
-                </a>
+        <section class="purpose section-wrap" aria-labelledby="purpose-title">
+            <p class="eyebrow eyebrow-dark">WHY WE SERVE</p>
+            <div class="purpose-grid">
+                <h2 id="purpose-title">Music is more than a part to play.</h2>
+                <div>
+                    <p>The Music Ministry helps lead the congregation in worship and glorify God through music. We welcome people who are ready to learn, serve, and grow in their gifts.</p>
+                    <p>You can start by learning an instrument, singing, or playing tambourine—or apply to serve as part of the ministry.</p>
+                </div>
             </div>
+        </section>
 
-            <div class="form-card">
+        <section class="applications" id="applications" aria-labelledby="applications-title">
+            <div class="section-wrap">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow eyebrow-dark">TAKE THE NEXT STEP</p>
+                        <h2 id="applications-title">Choose your application.</h2>
+                    </div>
+                    <p class="section-description">Select the option that fits where you are right now.</p>
+                </div>
 
-                <h3>Music Ministry Application</h3>
+                <div class="application-grid">
+                    <article class="application-card">
+                        <div class="card-topline"><span class="card-number">01</span><span class="card-icon" aria-hidden="true">♫</span></div>
+                        <p class="card-label">LEARN & PRACTICE</p>
+                        <h3>Music Training</h3>
+                        <p>Interested in learning singing, an instrument, or tambourine? Start here and take the first step in developing your skills.</p>
+                        <a class="button button-green" href="https://forms.gle/r7MZmvsbSE7mPewPA" target="_blank" rel="noopener noreferrer">Apply for training <span aria-hidden="true">↗</span></a>
+                    </article>
 
-                <p>
-                    Register if you are interested in joining the Music Ministry.
-                </p>
-
-                <!-- Checkbox -->
-                <label style="display:flex; align-items:center; gap:10px; margin:15px 0; justify-content:center; cursor: pointer;">
-                    <input type="checkbox" id="baptizedCheck">
-                    Are you baptized?
-                </label>
-
-                <!-- Button -->
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7c_bYVJBD8f0eilDerBzN8deddpqzxUPavPbdgUGlN2cLkQ/viewform?usp=publish-editor"
-                    target="_blank" class="form-btn disabled" id="registerBtn" onclick="return false;">
-                    <i class="fa-solid fa-pen-to-square"></i> Register Now
-                </a>
-
+                    <article class="application-card application-card-featured">
+                        <div class="card-topline"><span class="card-number">02</span><span class="card-icon" aria-hidden="true">✳</span></div>
+                        <p class="card-label">SERVE WITH THE TEAM</p>
+                        <h3>Join the Music Ministry</h3>
+                        <p>Ready to serve with the ministry? Read the eligibility prompt below, then continue to the application form.</p>
+                        <label class="eligibility-check" for="baptizedCheck">
+                            <input type="checkbox" id="baptizedCheck">
+                            <span class="custom-check" aria-hidden="true"></span>
+                            <span>I am baptized.</span>
+                        </label>
+                        <p class="eligibility-note" id="eligibilityNote" aria-live="polite">Confirm the statement to enable the application link.</p>
+                        <a class="button button-disabled" href="https://docs.google.com/forms/d/e/1FAIpQLSd7c_bYVJBD8f0eilDerBzN8deddpqzxUPavPbdgUGlN2cLkQ/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" id="registerBtn" aria-disabled="true">Continue to application <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+                <p class="application-footnote">The checkbox enables the link in this browser; it does not verify baptism status. Please answer accurately.</p>
             </div>
+        </section>
+    </main>
 
-        </div>
-
-    </section>
-
-    <footer>
-        "Sing to the Lord a new song." — Psalm 96:1
+    <footer class="site-footer">
+        <a class="footer-brand" href="#">LEBC <span>Music Ministry</span></a>
+        <p>“Sing to the Lord a new song.” <span>— Psalm 96:1</span></p>
+        <a class="back-top" href="#" aria-label="Back to top">↑</a>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
-
-<script src="js/script.js"></script>
-
 </html>
